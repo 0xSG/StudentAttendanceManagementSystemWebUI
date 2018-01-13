@@ -1,0 +1,107 @@
+<html>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style2.css">
+<!-- jQuery library -->
+<script src="jquery/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+	<head></head>
+	<style>
+		
+		
+	</style> 
+	
+	<body>
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">SAMS</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="#"><span class="badge badge-pill badge-secondary">Teacher</span><span class="sr-only">(current)</span></a>
+          
+          
+      <a class="nav-item nav-link left " onclick="location.href='http://localhost:8080/SAMS_Web/'" ><h5>Logout</h5></a>
+    </div>
+  </div>
+</nav>
+<div class="container">
+  <!-- Content here -->
+
+		<br>
+	<h1 id="demo" class="centeredH"></h1>
+	<br>
+		<br>
+			<br>
+
+<script>
+var d = new Date();
+var n = d.getDate()+":"+d.getMonth()+":"+d.getFullYear();
+document.getElementById("date").innerHTML = n;
+
+function toggle(source) {
+  checkboxes = document.getElementsByName('std');
+  for(var checkbox in checkboxes)
+    checkbox.checked = source.checked;
+}
+
+function toggle(source) {
+  checkboxes = document.getElementsByName('std');
+  for(var i=0, n=checkboxes.length;i<n;i++) {
+    checkboxes[i].checked = source.checked;
+  }
+}
+</script>
+
+<form action="t">
+
+  <div class="form-group">
+    <label  for="exampleFormControlSelect1">Time</label>
+    <select class="form-control" id="exampleFormControlSelect1">
+      <option class="date">sjsjsj</option>
+      
+    </select>
+    <label for="exampleFormControlSelect1">Select Date</label>
+    <select class="form-control" id="exampleFormControlSelect1">
+      <option>sjsjsj</option>
+      
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect2">Example multiple select</label>
+    <select multiple class="form-control" id="exampleFormControlSelect2">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Example textarea</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+  <label><input type="checkbox" onClick="toggle(this)" /> Toggle All</label><br/>
+  <div class="form-check form-check-inline">
+  <label class="form-check-label">
+    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" name="std"> <p class="text-success">1dsfsadfasdfasd</p>
+    
+  </label>
+</div><br>
+ <div class="form-check form-check-inline">
+  <label class="form-check-label">
+    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" name="std"> <p class="text-success">1dsfsadfasdfasd</p>
+    
+  </label>
+</div>
+<input type="submit">
+</form>
+</div>
+
+
+	
+
+	</body>
+</html>

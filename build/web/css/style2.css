@@ -1,0 +1,85 @@
+.centered {
+  position: fixed; /* or absolute */
+  top: 50%;
+  left: 35%;
+  
+}
+.LBTN {
+	width:200px;
+	height:100px;
+	background-color: #979797;
+	border-bottom-left-radius: 50px;
+	border-top-left-radius: 50px;
+	border: rgba(255,255,255,0);
+	
+}
+.RBTN {
+	width:200px;
+	height:100px;
+	background-color: #6e6e6e;
+	border-bottom-right-radius: 50px;
+	border-top-right-radius: 50px;
+	border: rgba(255,255,255,0);
+}
+
+rot {
+  border-radius: 50%;
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+          transition:         transform .8s ease-in-out;
+}
+rot:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.element {
+  animation: pulse 5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #484848;
+  }
+  50% {
+    background-color: #818181;
+  }
+  100% {
+    background-color: #484848;
+  }
+}
+
+.ielement {
+  animation: ipulse 5s infinite;
+}
+
+@keyframes ipulse {
+  0% {
+    background-color: #818181;
+  }
+  50% {
+    background-color: #484848;
+  }
+  100% {
+    background-color: #818181;
+  }
+}
+
+.left {
+  position: fixed; /* or absolute */
+  right:5%;
+  
+}
+
+.BtnH3{
+	color:white;
+}
+body {
+	background-color: #888888;
+}
+.centeredH {
+  position: fixed; /* or absolute */
+  
+  left: 35%;
+  
+}
+
